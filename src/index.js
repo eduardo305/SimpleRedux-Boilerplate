@@ -12,9 +12,10 @@ let store = createStore(UserReducer, middleware);
 // Initial state
 console.log(store.getState());
 
-store.dispatch(fetchUsers()).then((response) => {
-  console.table(response);
-});
+store.dispatch(fetchUsers());
+// store.dispatch(fetchUsers()).then((response) => {
+//   console.table(response);
+// });
 
 // store.dispatch(( dispatch ) => {
 //   dispatch(fetchUsers()).then((response) => {
